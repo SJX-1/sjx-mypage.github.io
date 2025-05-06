@@ -1,0 +1,70 @@
+﻿
+/*基本样式与主页面保持一致*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/*section样式 只有section才会被选中*/
+section.head {
+    text-align: center;
+    margin: 20px auto; /* 上下外边距为20px，左右外边距为auto，实现垂直和水平居中 */
+    padding: 20px;
+}
+section.about {
+    text-align: left;
+    background-color: white; /* 内容区域背景颜色 */
+    padding: 20px; /* 内边距 */
+    margin: 20px; /* 外边距 */
+    border-radius: 8px; /* 圆角边框 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+section.about h1, section.about h2 {
+    color: blue; /* 标题颜色 */
+    margin-bottom: 10px; /* 标题与内容之间的间距 */
+}
+
+section.about p {
+    margin-bottom: 15px; /* 段落间距 */
+}
+
+section.about ul {
+    list-style: none; /* 去掉列表默认样式 */
+    padding: 0;
+}

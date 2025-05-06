@@ -1,0 +1,76 @@
+﻿/*project.html样式信息*/
+/*基本样式与主页面保持一致*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/*项目模块*/
+
+.Myprojects {
+    padding: 2rem;
+    background-color: #fff;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Myprojects-item {
+    display: flex;
+    flex-direction: column; /* 设置为垂直排列 */
+    align-items: flex-start; /* 对齐方式 */
+    gap: 20px; /* 项目之间的间距 */
+}
+
+.Myprojects-content {
+    display: flex;
+    flex-direction: row; /* 设置为水平排列 */
+    align-items: center;
+    gap: 20px; /* 项目之间的间距 */
+}
+
+.Myprojects-link {
+    display: block; /* 将链接设置为块级元素，自动换行 */
+    margin-top: 10px; /* 可选：添加一些间距 */
+}
+
+.Myprojects-img {
+    width: 150px;
+    height: 150px;
+    margin: 1rem auto;
+}
