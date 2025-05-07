@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的生活</title>
+    <link rel="stylesheet" href="about.css"> <!-- 如果样式相同，可以复用styles.css -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">返回主页</a></li> <!-- 添加返回主页的链接 -->
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="head">
+        <h1>我的生活</h1>
+        <p>你好，我是苏健欣，一个热爱生活和喜欢动手实践的人。</p>
+        <p>我专注于实现一些自己喜欢的项目，喜欢分享技术经验和生活点滴。</p>
+
+        <section id="run" class="about">
+            <h2>跑步打卡</h2>
+            <p>点个赞 一起奔跑吧！</p>
+            <div style="display: flex; flex-direction: row;">
+                <img src="./photos/跑步1.jpg" alt="个人头像" style="width:150px;height:300px">
+                <div class="like-container">
+                    <button id="like-button" class="like-button">
+                        <img src="./photos/点赞.png" alt="点赞" style="width:30px;height:30px">
+                    </button>
+                    <span id="like-count">0</span>
+                </div>
+            </div>
+            <script src="good.js"></script>
+        </section>
+
+        <section id="口琴" class="about">
+            <h2>口琴</h2>
+            <div style="display: flex; flex-direction: row;">
+                <img src="./photos/口琴.jpg" alt="个人头像" style="width:200px;height:200px">
+            </div>
+            <a href="https://space.bilibili.com/1879770544?spm_id_from=333.1007.0.0">关注我的B站</a>
+        </section>
+
+        <section id="" class="about">
+            <h2>尤克里里</h2>
+            <div style="display: flex; flex-direction: row;">
+                <img src="./photos/尤克里里.jpg" alt="个人头像" style="width:150px;height:200px">
+            </div>
+            <a href="https://space.bilibili.com/1879770544?spm_id_from=333.1007.0.0">关注我的B站</a>
+        </section>
+
+    </section>
+
+</body>
+</html>

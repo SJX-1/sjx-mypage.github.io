@@ -3,57 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>关于我</title>
+    <title>我的项目</title>
     <link rel="stylesheet" href="Myprojects.css"> <!-- 如果样式相同，可以复用styles.css -->
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="网页.html">返回主页</a></li> <!-- 添加返回主页的链接 -->
+                <li><a href="index.html">返回主页</a></li> <!-- 添加返回主页的链接 -->
             </ul>
         </nav>
     </header>
 
-    <section id="Myprojects" class="Myprojects">
+    <section id="projects" class="My">
         <!-- 定义一个区域，用于展示项目 -->
-        <h2>热门项目</h2> <!-- 区域标题 -->
-        <div class="Myprojects-item">
-            <!-- 单个项目展示 -->
-            <h3>项目1：矩阵库</h3> <!-- 项目名称 -->
-            <div class="Myprojects-content">
-                <img src="./photos/矩阵库.jpg" alt="个人头像" class="Myprojects-img">
-                <p>项目简介：一个基于C++开发的矩阵运算库，可用于控制系统设计。</p> <!-- 项目简介 -->
-                <div>
-                    <a href="https://example.com/project1" target="_blank">查看项目</a> <!-- 项目链接，点击后在新标签页打开 -->
+        <h2 style="text-align:center">个人项目</h2>
+        <section id="Myproject1" class="Myprojects">
+            <div class="Myprojects-item">
+                <!-- 单个项目展示 -->
+                <h3>项目1：矩阵库</h3> <!-- 项目名称 -->
+                <div class="Myprojects-content">
+                    <img src="./photos/矩阵库.jpg" alt="个人头像" class="Myprojects-img">
+                    <div class="Myprojects-item">
+                        <p>项目简介：一个基于C++开发的矩阵运算库，主要包括：矩阵加法、</p>
+                        <p>减法、乘法，点乘运算，矩阵求逆，向量范数等功能。矩阵库主要用</p>
+                        <p>于实现控制算法，研究生阶段用于开发基于ADP的飞行器姿态控制算法。</p>
+                        <!-- 项目简介 -->
+                        <a href="project1.html" target="_blank">查看项目</a> <!-- 项目链接，点击后在新标签页打开 -->
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="project-item">
-            <!-- 另一个项目展示 -->
-            <h3>项目2：贪吃蛇</h3> <!-- 项目名称 -->
-            <p>一个基于C++开发的贪吃蛇小游戏，内含生日祝福彩蛋。</p> <!-- 项目简介 -->
-            <a href="https://example.com/project2" target="_blank">查看项目</a> <!-- 项目链接，点击后在新标签页打开 -->
-        </div>
-        <div class="project-item">
-            <!-- 另一个项目展示 -->
-            <h3>项目3：基于ADP的飞行器控制(MATLAB版）</h3> <!-- 项目名称 -->
-            <p>研究生阶段的主要研究方向，一个基于MATLAB开发的飞行器控制器，内含生日祝福彩蛋。</p> <!-- 项目简介 -->
-            <a href="https://example.com/project2" target="_blank">查看项目</a> <!-- 项目链接，点击后在新标签页打开 -->
-        </div>
-        <div class="project-item">
-            <!-- 另一个项目展示 -->
-            <h3>项目4：基于离线在线策略迭代的飞行器控制(MATLAB版）</h3> <!-- 项目名称 -->
-            <p>研究生阶段的主要研究项目，一个基于MATLAB开发的飞行器控制，内含生日祝福彩蛋。</p> <!-- 项目简介 -->
-            <a href="https://example.com/project2" target="_blank">查看项目</a> <!-- 项目链接，点击后在新标签页打开 -->
-        </div>
-        <div class="project-item">
-            <!-- 另一个项目展示 -->
-            <h3>项目5：基于ADP的飞行器控制(C++版）</h3> <!-- 项目名称 -->
-            <p>研究生阶段的主要研究项目，一个基于C++开发的飞行器控制器。</p> <!-- 项目简介 -->
-            <a href="https://example.com/project2" target="_blank">查看项目</a> <!-- 项目链接，点击后在新标签页打开 -->
-        </div>
+        </section>
+        <section id="Myproject2" class="Myprojects">
+            <div class="Myprojects-item">
+                <!-- 另一个项目展示 -->
+                <h3>项目2：贪吃蛇</h3> <!-- 项目名称 -->
+                <div class="Myprojects-content">
+                    <img src="./photos/贪吃蛇.png" alt="个人头像" class="Myprojects-img">
+                    <div class="Myprojects-item">
+                        <p>项目简介：一个基于C++开发的贪吃蛇小游戏。</p> <!-- 项目简介 -->
+                        <p>内含生日祝福彩蛋，可以当作礼物送给好朋友噢！</p>
+                        <a href="project2.html" target="_blank">查看项目</a> <!-- 项目链接，点击后在新标签页打开 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Myproject3" class="Myprojects">
+            <div class="Myprojects-item">
+                <!-- 另一个项目展示 -->
+                <h3>项目3：基于ADP的飞行器控制(MATLAB版/C++版）</h3> <!-- 项目名称 -->
+                <div class="Myprojects-content">
+                    <img src="./photos/飞行器1.png" alt="个人头像" class="Myprojects-img">
+                    <div class="Myprojects-item">
+                        <p>项目简介：研究生阶段的主要研究方向，一个基于MATLAB/C++开发的</p>
+                        <p>飞行器控制器,由基于预设性能的稳态控制器和基于自适应动态规划的</p>
+                        <p>最优补偿控制器组成，基于文章《》的复现代码</p><!-- 项目简介 -->
+                        <a href="project3.html" target="_blank">查看项目</a> <!-- 项目链接，点击后在新标签页打开 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Myproject4" class="Myprojects">
+            <div class="Myprojects-item">
+                <!-- 另一个项目展示 -->
+                <h3>项目4：基于离线在线策略迭代的飞行器控制(MATLAB版）</h3> <!-- 项目名称 -->
+                <div class="Myprojects-content">
+                    <img src="./photos/飞行器2.png" alt="个人头像" class="Myprojects-img">
+                    <div class="Myprojects-item">
+                        <p>项目简介：研究生阶段的主要研究方向，一个基于MATLAB开发的飞行器控制器。</p> <!-- 项目简介 -->
+                        <p>控制器由两部分组成，一是基于自适应预设性能的稳态控制器，</p>
+                        <p>二是基于离线/在线策略迭代实现最优补偿控制器设计</p>
+                        <p>研究生发表文章《》的源码。(模型有更换）</p>
+                        <a href="https://example.com/project2" target="_blank">查看项目</a> <!-- 项目链接，点击后在新标签页打开 -->
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
-
 </body>
 </html>

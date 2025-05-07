@@ -1,7 +1,7 @@
 ﻿
 /*基本样式与主页面保持一致*/
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
@@ -14,6 +14,7 @@ body {
 }
 
 header {
+    width: 1000px;
     background-color: #333;
     color: #fff;
     padding: 1rem 0;
@@ -27,7 +28,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 1rem;
+    margin: 0 auto;
 }
 
 nav ul li a {
@@ -42,21 +43,28 @@ nav ul li a:hover {
 
 /*section样式 只有section才会被选中*/
 section.head {
+    width: 1000px;
     text-align: center;
-    margin: 20px auto; /* 上下外边距为20px，左右外边距为auto，实现垂直和水平居中 */
-    padding: 20px;
-}
-section.about {
-    text-align: left;
     background-color: white; /* 内容区域背景颜色 */
-    padding: 20px; /* 内边距 */
-    margin: 20px; /* 外边距 */
     border-radius: 8px; /* 圆角边框 */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    margin: 10px auto; /* 上下外边距为20px，左右外边距为auto，实现垂直和水平居中 */
+    padding: 20px;
+}
+
+section.about {
+    width: 900px;
+    text-align: left;
+    padding: 20px; /* 内边距 */
+    margin: 20px auto; /* 外边距 */
+    background-color: white; /* 内容区域背景颜色 */
+    border-radius: 8px; /* 圆角边框 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    position: relative;
 }
 
 section.about h1, section.about h2 {
-    color: blue; /* 标题颜色 */
+    color: #477eff; /* 标题颜色 */
     margin-bottom: 10px; /* 标题与内容之间的间距 */
 }
 
@@ -67,4 +75,31 @@ section.about p {
 section.about ul {
     list-style: none; /* 去掉列表默认样式 */
     padding: 0;
+}
+
+.like-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.like-button {
+    background-color: white;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/*    .like-button:hover {
+        background-color: #0056b3;
+    }*/
+
+#like-count {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #333;
 }
